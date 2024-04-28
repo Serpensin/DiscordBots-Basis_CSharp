@@ -1,4 +1,4 @@
-﻿namespace C_
+﻿namespace Basis
 {
     public class EnvironmentVariables
     {
@@ -18,7 +18,16 @@
             DotNetEnv.Env.Load();
 
             BotToken = Environment.GetEnvironmentVariable("TOKEN");
-            OwnerID = ulong.Parse(Environment.GetEnvironmentVariable("OWNER_ID"));
+            string ownerIdString = Environment.GetEnvironmentVariable("OWNER_ID");
+            if (!string.IsNullOrEmpty(ownerIdString))
+            {
+                OwnerID = ulong.Parse(ownerIdString);
+            }
+            else
+            {
+                Console.WriteLine("OWNER_ID environment variable is not set or is empty.");
+                Environment.Exit(1);
+            }
             SentryDSN = Environment.GetEnvironmentVariable("SENTRY_DSN");
             LoggingLevel = Environment.GetEnvironmentVariable("LOGGING_LEVEL");
             BotName = "BotName";

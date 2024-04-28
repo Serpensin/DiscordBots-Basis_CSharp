@@ -6,7 +6,7 @@
         <RootNamespace>C_</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PublishAot>true</PublishAot>
+        <PublishAot>false</PublishAot>
         <InvariantGlobalization>false</InvariantGlobalization>
     </PropertyGroup>
 

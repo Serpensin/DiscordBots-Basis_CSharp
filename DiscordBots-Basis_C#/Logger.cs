@@ -1,7 +1,7 @@
 ﻿using Discord;
 using Microsoft.Extensions.Logging;
 
-namespace C_
+namespace Basis
 {
     public static class DiscordExtensions
     {

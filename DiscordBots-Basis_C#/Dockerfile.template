@@ -1,0 +1,21 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+WORKDIR /app
+
+COPY . .
+
+ARG Configuration=Release
+
+RUN apt update && apt install -y gcc libcurl4-openssl-dev zlib1g-dev && \
+    dotnet restore && \
+    dotnet publish -c $Configuration -o out --self-contained false
+
+FROM mcr.microsoft.com/dotnet/runtime:8.0-alpine AS runtime
+
+WORKDIR /app
+
+COPY --from=build /app/out .
+RUN apk add icu-dev && \
+    [ -f .env ] && rm .env || true
+
+ENTRYPOINT ["dotnet", "/app/Basis.dll"]

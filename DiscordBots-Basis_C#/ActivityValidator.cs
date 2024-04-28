@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 
-namespace C_
+namespace Basis
 {
     public class ActivityValidator
     {

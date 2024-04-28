@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#", "DiscordBots-Basis_C#\C#.csproj", "{B9D98DA2-40F7-49FA-9903-6207D1E2DCBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basis", "DiscordBots-Basis_C#\Basis.csproj", "{B9D98DA2-40F7-49FA-9903-6207D1E2DCBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{658CFB6C-62DD-438F-9708-E22FBDA5152E}"
 	ProjectSection(SolutionItems) = preProject

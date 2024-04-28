@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using System.IO.Compression;
 using System.Net;
 
-namespace C_
+namespace Basis
 {
     public class AClient : DiscordShardedClient
     {

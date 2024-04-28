@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace C_
+namespace Basis
 {
     public class Program
     {
